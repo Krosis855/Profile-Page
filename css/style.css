@@ -1,0 +1,129 @@
+#welcome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+    
+#photos, nav, h1, #contact {
+    text-align: center;
+}
+    
+body {
+    background-color: cyan;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav, #contactlinks {
+    padding-bottom: 3em;
+    margin: 0.5em;
+}
+
+h1, h2 {
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1em;
+    color: purple;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#pic-one {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+}
+
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+#aboutme-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#aboutme, #interests {
+    
+    width: 450px;
+    height: 400px;
+    align-content: center;
+    border: 6px black solid;
+    background-color: pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 60px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+#nav-styles {
+    
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: pink;
+    border: 6px solid black;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 80px;
+}
+
+#photos, #top {
+    background-color: hotpink;
+    padding-bottom: 40px;
+    border: 6px solid black;
+    border-radius: 60px;
+}
+
+#top {
+    padding-top: 40px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#contact {
+    background-color: pink;
+    border: black 6px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 60px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#contactlinks {
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#goodbye {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#photos img {
+    padding: 20px;
+}
+
+#photos video {
+    padding: 20px;
+}

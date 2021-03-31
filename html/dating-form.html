@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Find Love Today</title>
+        <link rel="stylesheet" href="css/dating-form.css">
+    </head>
+    <body>
+        <h1>Enter Your Details and Find Love Today</h1>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Your Face</legend>
+                <div>
+                    <label for="avatar">Upload Your Image:</label>
+                    <input type="file" id="avatar" name="avatar" required>
+                </div>
+                <p>Image Preview:</p>
+                <img id="preview" width="500">
+            </fieldset>
+            <fieldset>
+                <legend>Your Details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div>
+                    <label>Preferred Pronoun:</label>
+                    <input type="checkbox" id="he/him" name="pronoun" value="he/him">
+                    <label for="he/him">He/Him</label>
+                    <input type="checkbox" id="she/her" name="pronoun" value="he/him">
+                    <label for="she/her">She/Her</label>
+                    <input type="checkbox" id="they/them" name="pronoun" value="he/him">
+                    <label for="they/them">They/Them</label>
+                </div>
+                <div>
+                    <label>Do you like techno?</label>
+                    <input type="radio" id="yes" name="techno" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="techno" value="no" required>
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option>Choose a country</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="france">France</option>
+                        <option value="japan">Japan</option>
+                        <option value="libya">Libya</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="vibe">On a scale of 1 to 100 how are you vibing today?</label>
+                    <span class="range-caption">No Vibe</span>
+                    <input type="range" id="vibe" name="vibe" min="0" max="100" value="50">
+                    <span class="range-caption">Vibing Hard</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Contact</legend>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea cols="40" id="address" name="address"></textarea>
+                </div>
+                <div>
+                    <label>Contact method(s):</label>
+                    <input type="checkbox" name="contact" id="emailCheckbox" value="email">
+                    <label for="emailCheckbox">Email</label>
+                    <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+                    <label for="phoneCheckbox">Phone</label>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <script src="https://url.nucamp.co/datingjs"></script>
+    </body>
+</html>

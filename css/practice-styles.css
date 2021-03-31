@@ -1,0 +1,94 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: burlywood;
+}
+
+h1 {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+
+table {
+    width: 350px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+tr {
+    border: black solid 2px;
+}
+
+thead {
+    text-align: left;
+}
+
+label {
+    display: block;
+}
+
+#submit-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact {
+    border-style: dashed;
+    border-color: black;
+    text-align: center;
+    margin: 50px 350px;
+    padding-bottom: 20px;
+    border-radius: 15px 50px;
+}
+
+#review {
+    justify-content: center;
+    display: flex;
+}
+
+h2 {
+    color:rgb(3, 0, 5);
+    font-family:fantasy;
+    text-align: center;
+    font-size: 28px;
+}
+
+#menu {
+    background-image: url(https://media.istockphoto.com/photos/coffe-cup-with-coffee-beans-picture-id172710119?k=6&m=172710119&s=170667a&w=0&h=9ttewt5W0XjoDFlN5oSBU8ZoVNjHag477F_Ff4cpfnQ=);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 335px;
+    background-position: center;
+}
+
+.image-review {
+    height: 150px;
+    margin-right: 20px;
+}
+
+#name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px 0 black;
+}
+
+#rating {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coffee-love {
+    height: 150px;
+    margin-left: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#submit-btn {
+    box-shadow: 0 3px 8px 0 black;
+}
