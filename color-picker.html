@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Color Picker Game</title>
+        <link rel="stylesheet" href="css/color-picker.css">
+    </head>
+    <body>
+        <h1>Pick a Color, Any Color!</h1>
+        <div>
+            <button type="button" id="start-game" onclick="runGame()">Start Game</button>
+        </div>
+        <div>
+            <button type="button" id="red" onclick="runGame()">Red</button>
+            <br>
+            <button type="button" id="orange" onclick="runGame()">Orange</button>
+            <br>
+            <button type="button" id="yellow" onclick="runGame()">Yellow</button>
+            <br>
+            <button type="button" id="green" onclick="runGame()">Green</button>
+            <br>
+            <button type="button" id="blue" onclick="runGame()">Blue</button>
+            <br>
+            <button type="button" id="indigo" onclick="runGame()">Indigo</button>
+            <br>
+            <button type="button" id="violet" onclick="runGame()">Violet</button>
+            <br>
+            <button type="button" id="pink" onclick="runGame()">Pink</button>
+        </div>
+
+        <script>
+
+            function runGame() {
+
+                const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'pink'];
+                const correctChoice = colorSelect(colors);
+            
+                let playerChoice = '';
+                let numTries = 0
+
+                do {
+                    playerChoice = prompt('Which color do you choose?').toLowerCase();
+                } while (playerChoice !== correctChoice)
+
+                alert(`Awesome job ${correctChoice} is what I was thinking about.`)
+            }
+
+            function colorSelect(colors) {
+                
+                return colors[Math.floor(Math.random() * colors.length)];
+            
+            }
+
+        </script>
+    </body>
+</html>
