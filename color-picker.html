@@ -40,9 +40,10 @@
 
                 do {
                     playerChoice = prompt('Which color do you choose?').toLowerCase();
+                    numTries += 1
                 } while (playerChoice !== correctChoice)
 
-                alert(`Awesome job ${correctChoice} is what I was thinking about.`)
+                alert(`Awesome job ${correctChoice} is what I was thinking about. You figured it out in ${numTries} tries.`)
             }
 
             function colorSelect(colors) {
