@@ -11,21 +11,21 @@
             <button type="button" id="start-game" onclick="runGame()">Start Game</button>
         </div>
         <div>
-            <button type="button" id="red" onclick="runGame()">Red</button>
+            <button type="button" id="red">Red</button>
             <br>
-            <button type="button" id="orange" onclick="runGame()">Orange</button>
+            <button type="button" id="orange">Orange</button>
             <br>
-            <button type="button" id="yellow" onclick="runGame()">Yellow</button>
+            <button type="button" id="yellow">Yellow</button>
             <br>
-            <button type="button" id="green" onclick="runGame()">Green</button>
+            <button type="button" id="green">Green</button>
             <br>
-            <button type="button" id="blue" onclick="runGame()">Blue</button>
+            <button type="button" id="blue">Blue</button>
             <br>
-            <button type="button" id="indigo" onclick="runGame()">Indigo</button>
+            <button type="button" id="indigo">Indigo</button>
             <br>
-            <button type="button" id="violet" onclick="runGame()">Violet</button>
+            <button type="button" id="violet">Violet</button>
             <br>
-            <button type="button" id="pink" onclick="runGame()">Pink</button>
+            <button type="button" id="pink">Pink</button>
         </div>
 
         <script>
@@ -36,14 +36,14 @@
                 const correctChoice = colorSelect(colors);
             
                 let playerChoice = '';
-                let numTries = 0
+                let numTries = 0;
 
                 do {
                     playerChoice = prompt('Which color do you choose?').toLowerCase();
-                    numTries += 1
-                } while (playerChoice !== correctChoice)
+                    numTries += 1;
+                } while (playerChoice !== correctChoice);
 
-                alert(`Awesome job ${correctChoice} is what I was thinking about. You figured it out in ${numTries} tries.`)
+                alert(`Awesome job ${correctChoice} is what I was thinking about. You figured it out in ${numTries} tries.`);
             }
 
             function colorSelect(colors) {
