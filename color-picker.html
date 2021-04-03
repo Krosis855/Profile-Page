@@ -7,25 +7,26 @@
     </head>
     <body>
         <h1>Pick a Color, Any Color!</h1>
+        <h2>Click a color button to make a guess.</h2>
         <div>
             <button type="button" id="start-game" onclick="runGame()">Start Game</button>
         </div>
         <div>
-            <button type="button" id="red">Red</button>
+            <button type="button" id="red" onclick="makeGuess('red')">Red</button>
             <br>
-            <button type="button" id="orange">Orange</button>
+            <button type="button" id="orange" onclick="makeGuess('orange')">Orange</button>
             <br>
-            <button type="button" id="yellow">Yellow</button>
+            <button type="button" id="yellow" onclick="makeGuess('yellow')">Yellow</button>
             <br>
-            <button type="button" id="green">Green</button>
+            <button type="button" id="green" onclick="makeGuess('green')">Green</button>
             <br>
-            <button type="button" id="blue">Blue</button>
+            <button type="button" id="blue" onclick="makeGuess('blue')">Blue</button>
             <br>
-            <button type="button" id="indigo">Indigo</button>
+            <button type="button" id="indigo" onclick="makeGuess('indigo')">Indigo</button>
             <br>
-            <button type="button" id="violet">Violet</button>
+            <button type="button" id="violet" onclick="makeGuess('violet')">Violet</button>
             <br>
-            <button type="button" id="pink">Pink</button>
+            <button type="button" id="pink" onclick="makeGuess('pink')">Pink</button>
         </div>
 
         <script>
@@ -34,16 +35,13 @@
 
                 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'pink'];
                 const correctChoice = colorSelect(colors);
-            
-                let playerChoice = '';
-                let numTries = 0;
+                
+                makeGuess(playerChoice);
 
-                do {
-                    playerChoice = prompt('Which color do you choose?').toLowerCase();
-                    numTries += 1;
-                } while (playerChoice !== correctChoice);
+                if (playerChoice === correctChoice) {
+                    alert(`You picked the correct color!`);
+                }
 
-                alert(`Awesome job ${correctChoice} is what I was thinking about. You figured it out in ${numTries} tries.`);
             }
 
             function colorSelect(colors) {
@@ -51,7 +49,11 @@
                 return colors[Math.floor(Math.random() * colors.length)];
             
             }
-
+            /* makeGuess needs to return button click as player's choice? which paramater to use? colors? */
+            button.onclick = function makeGuess(playerChoice) {
+                return playerChoice;
+            }
+            
         </script>
     </body>
 </html>
